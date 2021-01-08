@@ -37,9 +37,9 @@ class EventCard extends StatelessWidget {
                           child: Text(
                             dateFormatter.format(events[0].dateTime),
                             style:
-                            Theme.of(context).textTheme.headline6.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
+                                Theme.of(context).textTheme.headline6.copyWith(
+                                      fontWeight: FontWeight.bold,
+                                    ),
                           ),
                         ),
                         if (events[0].status == EventStatus.completed)
@@ -93,8 +93,8 @@ class EventCard extends StatelessWidget {
                 child: Text(
                   timeFormatter.format(event.dateTime),
                   style: Theme.of(context).textTheme.headline6.copyWith(
-                    fontWeight: FontWeight.bold,
-                  ),
+                        fontWeight: FontWeight.bold,
+                      ),
                 ),
               ),
               if (showCompletedLabel && event.status == EventStatus.completed)
@@ -257,8 +257,16 @@ class DetailsEventStepper extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: const EdgeInsets.only(left: 16),
-              child: builder(context, event),
+              padding: const EdgeInsets.only(left: 8),
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: builder(context, event),
+                ),
+              ),
             ),
           ),
         ],
