@@ -234,7 +234,7 @@ class DetailsEventStepper extends StatelessWidget {
           Opacity(
             opacity: event.status == EventStatus.completed ? .8 : 1,
             child: Padding(
-              padding: const EdgeInsets.only(top: 40),
+              padding: const EdgeInsets.only(top: 62),
               child: Container(
                 height: 20,
                 width: 20,
