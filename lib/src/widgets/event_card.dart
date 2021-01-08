@@ -47,7 +47,7 @@ class EventCard extends StatelessWidget {
                             padding: const EdgeInsets.only(left: 8),
                             child: RaisedButton(
                               onPressed: () {},
-                              color: Colors.white54,
+                              color: Colors.grey,
                               child: Text(
                                 'Completed',
                                 style: Theme.of(context).textTheme.button,
@@ -102,7 +102,7 @@ class EventCard extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 8),
                   child: RaisedButton(
                     onPressed: () {},
-                    color: Colors.white54,
+                    color: Colors.grey,
                     child: Text(
                       'Completed',
                       style: Theme.of(context).textTheme.button,
